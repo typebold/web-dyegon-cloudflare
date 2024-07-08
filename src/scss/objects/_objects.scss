@@ -1,0 +1,9 @@
+.o-container{
+    width: 80%;
+    max-width: 1600px;
+    display: block;
+    margin: 0 auto;
+    @media (max-width: 768px) {
+        width: 95%;
+    }
+}

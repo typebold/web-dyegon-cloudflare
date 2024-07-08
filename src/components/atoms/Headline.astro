@@ -1,0 +1,44 @@
+---
+interface Props {
+	level: number;
+	color: string;
+	weight: string;
+	className?: string;
+}
+const { level, className = '', color = '', weight = '' } = Astro.props;
+
+const Headlines = {
+	1: {
+		tag: 'h1',
+		size: 'lg:text-8xl text-5xl',
+	},
+	2: {
+		tag: 'h2',
+		size: 'text-3xl',
+	},
+	3: {
+		tag: 'h3',
+		size: 'text-2xl',
+	},
+	4: {
+		tag: 'h4',
+		size: 'lg:text-8xl xxs:text-6xl',
+	},
+	5: {
+		tag: 'h5',
+		size: 'lg:text-8xl xxs:text-6xl',
+	},
+	6: {
+		tag: 'h6',
+		size: 'lg:text-8xl xxs:text-6xl',
+	},
+}
+
+const classColor = color && `text-${color}`;
+const classFont = weight && ` font-${weight}`;
+
+const Element = Headlines[level].tag;
+
+const classNames = `${Headlines[level].size} ${classColor} ${classFont} ${className}`;
+---
+<Element class={`${classNames}`}> <slot /> </Element>

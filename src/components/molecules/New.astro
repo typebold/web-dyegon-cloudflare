@@ -1,0 +1,45 @@
+---
+import { Image } from 'astro:assets';
+import Paragraph from '../atoms/Paragraph.astro';
+import IconNews from '../../assets/icons/news.svg'
+import IconArrow from '../../assets/icons/arrow.svg'
+interface Props {
+	text: string;
+	src_image: ImageMetadata;
+	alt_image: string;
+	link: string;
+}
+
+const { text, src_image, alt_image, link } = Astro.props;
+---
+<div class="c-press__news">
+    <div class="c-press__wrapper-news-icon">
+        <Image
+            class="c-press__icon"
+            src={IconNews}
+            alt='hola'
+        />
+        <Paragraph size='lg'>
+            News
+        </Paragraph>
+    </div>
+    <Image
+        class="c-press__news-image"
+        src={src_image}
+        alt={alt_image}
+    />
+    <Paragraph size='lg' className='mt-2'>
+       {text}
+    </Paragraph>
+    <a class="c-press__wrapper-link mt-5" href={link} target="_blank">
+        <Paragraph size='lg' weight='bold'>
+            See news
+        </Paragraph>
+        <Image
+            class="c-press__link-arrow"
+            src={IconArrow}
+            alt='hola'
+        />
+    </a>
+</div>
+

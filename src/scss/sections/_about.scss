@@ -1,0 +1,47 @@
+@use "../tools/mixin" as *;
+
+.c-about-us{
+    background: linear-gradient(180deg, rgba(251, 230, 118, 0.10) 0%, rgba(251, 230, 118, 0.00) 100%);
+    height: auto;
+    padding: 100px 0px 100px 0px;
+    &__wrapper-content{
+        width: 65%;
+        max-width: 1600px;
+        display: block;
+        margin: 0 auto;
+        @include xl(){
+            width: 75%;
+        }
+        @include lg(){
+            width: 100%;
+        }   
+    }
+    &__title{
+        padding-bottom: 80px;
+    }
+    &__logo-patagon{
+        width: 150px;
+        height: auto;
+        margin: 0 auto;
+    }
+    &__logo-dyegon{
+        width: 200px;
+        height: auto;
+        margin: 0 auto;
+    }
+}
+
+.divider{
+    height: 1px;
+    background-color: #C0D2E1;
+    width: 65%;
+    max-width: 1600px;
+    display: block;
+    margin: 0 auto;
+    @include xl(){
+        width: 85%;
+    }
+    @include lg(){
+        width: 95%;
+    }   
+}

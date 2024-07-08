@@ -1,0 +1,42 @@
+@use "../tools/mixin" as *;
+
+.c-footer{
+    padding-bottom: 120px;
+    @include md(){
+        padding-bottom: 50px;
+    }
+    &__wrapper-content{
+        width: 65%;
+        max-width: 1600px;
+        display: block;
+        margin: 0 auto;
+        @include xl(){
+            width: 85%;
+        }
+        @include lg(){
+            width: 95%;
+        }   
+    }
+    &__content{
+        text-align: start;
+        display: grid;
+        grid-template-columns: [v1] 1fr [v2] 1fr [v3];
+        @include md(){
+            grid-template-columns: [v1] 1fr [v2];
+            gap: 40px;
+        }                 
+    }
+    &__link{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    &__contact-right{
+        padding-top: 20px;
+        justify-self: end;
+        align-self: end;
+        @include md(){
+            justify-self: start;
+            
+        }
+    }
+}

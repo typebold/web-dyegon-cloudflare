@@ -1,0 +1,31 @@
+---
+import { Image } from 'astro:assets';
+import Paragraph from '../atoms/Paragraph.astro';
+interface Props {
+	name: string;
+	position: string;
+	academic: string;
+	src_image: ImageMetadata;
+	alt_image: string;
+}
+
+const { name, position, academic, src_image, alt_image } = Astro.props;
+---
+
+<div class="c-advisor__team">
+    <Image
+        class='c-advisor__image'
+        src={src_image}
+        alt={alt_image}
+    />
+    <Paragraph size='lg' weight='bold' className='mt-2'>
+        {name}
+    </Paragraph>
+    <Paragraph size='xs'>
+        {position}
+    </Paragraph>
+    <Paragraph size='xs'>
+        {academic}
+    </Paragraph>
+</div>
+

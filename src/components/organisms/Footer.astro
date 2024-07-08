@@ -1,0 +1,113 @@
+---
+import Headline from "../atoms/Headline.astro"
+import { Image } from "astro:assets"
+import IconFacebook from "../../assets/icons/facebook.svg"
+import IconInstagram from "../../assets/icons/instagram.svg"
+import IconLinkedin from "../../assets/icons/linkedin.svg"
+import IconEmail from "../../assets/icons/email.svg"
+import IconPhone from "../../assets/icons/phone.svg"
+import IconMap from "../../assets/icons/map.svg"
+import Corfo from '../../assets/corfo.png'
+import LogoPatagonFiber from '../../assets/by_patagon.svg';
+---
+<div class="c-footer" id="contact">
+    <div class="c-footer__wrapper-content">
+        <Image
+            src={LogoPatagonFiber}
+            class='c-about-us__logo-patagon pt-12 pb-24'
+            alt="descriptive text"
+        />
+        <div class="c-footer__content">
+            <div class="c-footer__contact-left flex flex-col">
+                <Headline
+                    level={2}
+                    color="black"
+                    weight="bold"
+                    className="mb-2"
+                >
+                    Contact
+                </Headline>
+                <div class="c-footer__link flex ">
+                    <Image
+                        class="mr-5"
+                        src={IconMap}
+                        alt='hola'
+                    />
+                    <a href="#" class="text-black underline underline-offset-4">
+                        San Ignacio 1381, of 3 Puerto Varas - Chile
+                    </a>
+                </div>
+                <div class="c-footer__link flex">
+                    <Image
+                        class="mr-5"
+                        src={IconEmail}
+                        alt='hola'
+                    />
+                    <a href="mailto:contacto@patagonfiber.com" class="text-black underline underline-offset-4">
+                        contacto@patagonfiber.com
+                    </a>
+                </div>
+                <div class="c-footer__link flex">
+                    <Image
+                        class="mr-5"
+                        src={IconPhone}
+                        alt='hola'
+                    />
+                    <a href="tel:+56 9 84884536" class="text-black font-bold underline underline-offset-4">
+                        +56 9 84884536
+                    </a>
+                </div>
+                <div class="c-footer__link flex">
+                    <Image
+                    class="mr-5"
+                    src={IconPhone}
+                    alt='hola'
+                />
+                    <a href="tel:+56 9 6845 1647" class="text-black font-bold underline underline-offset-4">
+                        +56 9 6845 1647
+                    </a>
+                </div>
+                <Headline
+                    level={2}
+                    color="black"
+                    weight="bold"
+                    className="mb-2 pt-10"
+                >
+                Social media
+            </Headline>
+                <div class="c-footer__social-media flex items-center mt-3">
+                    <a href="https://www.facebook.com/patagonfiber" target="_blank" class="text-white underline underline-offset-4">
+                        <Image
+                            class="mr-5"
+                            src={IconFacebook}
+                            alt='hola'
+                        />
+                    </a>
+                    <a href="https://www.instagram.com/patagonfiber/" target="_blank" class="text-white underline underline-offset-4">
+                        <Image
+                            class="mr-5"
+                            src={IconInstagram}
+                            alt='hola'
+                        />
+                    </a>
+                    <a href="https://www.linkedin.com/in/patagonfiber/" target="_blank" class="text-white underline underline-offset-4">
+                        <Image
+                            class="mr-5"
+                            src={IconLinkedin}
+                            alt='hola'
+                        />
+                    </a>
+                </div>
+    
+            </div>
+            <div class="c-footer__contact-right">
+                <div class="c-footer__logo">
+                    <Image
+                        src={Corfo}
+                        alt="Logo Corfo"
+                    />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

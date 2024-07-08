@@ -1,0 +1,113 @@
+@use "../tools/mixin" as *;
+.c-home-new{
+    width: 100%;
+    height: 100vh;
+    @include md(){
+        height: 80vh;
+    }  
+
+    &__wrapper-content{
+        width: 100%;
+        min-height: 100%;
+        margin: auto;
+        position: relative;
+        text-align: left;
+        overflow: hidden;
+    }
+
+
+    &__wrapper-nav{
+        padding-top: 50px;
+        width: 100%;
+        position: absolute;
+        z-index: 1;
+        display: flex;
+        flex-direction: column;
+		justify-content: space-between;
+		@include md(){
+			justify-content: center;
+		}
+    }
+
+    &__nav{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    &__logo{
+        @include md(){
+            margin: 0 auto;
+            width: 170px;
+        }
+    }
+
+    &__title{
+        text-align: center;
+        position: absolute;
+        width: 50%;
+        left: 25%;
+        top: 35%;
+        z-index: 2;
+        @include md(){
+            width: 90%;
+            left: 5%;
+        }
+    }
+    
+    &__video{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+
+        & iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            border: 0 none;
+        }
+        &--width{
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            left: -9999px;
+            right: -9999px;
+            margin: auto;
+        }
+
+        &--aspect{
+            position: absolute;
+            width: 100%;
+            height: 0;
+            top: -9999px;
+            bottom: -9999px;
+            margin: auto;
+            padding-bottom: 56.25%;
+            overflow: hidden;        
+        }
+
+        &--height{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+        }
+
+        &--hide-controls{
+            box-sizing: content-box;
+            position: relative;
+            height: 100%;
+            width: 100%;
+            padding: 55px 97.7777px;
+            top: -55px;
+            left: -97.7777px;
+        }
+    }
+}

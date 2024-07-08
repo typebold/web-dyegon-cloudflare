@@ -1,0 +1,101 @@
+/* ========================================================================================= */
+/* TOOLS - MIXINS */
+/* ========================================================================================= */
+@mixin xl() {
+    @media (max-width: 1280px) {
+        @content;
+    }
+}
+@mixin lg() {
+    @media (max-width: 1024px) {
+        @content;
+    }
+}
+@mixin md() {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sm() {
+    @media (max-width: 640px) {
+        @content;
+    }
+}
+@mixin xs() {
+    @media (max-width: 510px) {
+        @content;
+    }
+}
+@mixin xxs() {
+    @media (max-width: 320px) {
+        @content;
+    }
+}
+
+// RANGE
+@mixin only-2xl() {
+    @media (min-width: 1300px) and (max-width: 1500px) {
+        @content;
+    }
+}
+@mixin only-xl() {
+    @media (min-width: 1200px) and (max-width: 1300px) {
+        @content;
+    }
+}
+@mixin only-lg() {
+    @media (min-width: 1050px) and (max-width: 1200px) {
+        @content;
+    }
+}
+@mixin only-md() {
+    @media (min-width: 600px) and (max-width: 1050px) {
+        @content;
+    }
+}
+@mixin only-sm() {
+    @media (min-width: 501px) and (max-width: 1100px) {
+        @content;
+    }
+}
+@mixin only-xs() {
+    @media (min-width: 0px) and (max-width: 500px) {
+        @content;
+    }
+}
+
+
+// RANGE FOR UP
+@mixin min-xl() {
+    @media (min-width: 1200px) {
+        @content;
+    }
+}
+@mixin min-lg() {
+    @media (min-width: 1024px) {
+        @content;
+    }
+}
+@mixin min-md() {
+    @media (min-width: 768px) {
+        @content;
+    }
+}
+
+@mixin min-sm() {
+    @media (min-width: 576px) {
+        @content;
+    }
+}
+@mixin min-xs() {
+    @media (min-width: 480px) {
+        @content;
+    }
+}
+
+
+
+/* ========================================================================================= */
+/* END TOOLS - MIXINS */
+/* ========================================================================================= */

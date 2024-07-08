@@ -1,0 +1,16 @@
+---
+interface Props {
+	weight?: string;
+	color?: string;
+	size?: string;
+	className?: string;
+}
+const { size = '2xl', className = '', color = 'black', weight = 'medium' } = Astro.props;
+
+const classSize = size && `text-${size}`;
+const classColor = color && `text-${color}`;
+const classFont = weight && ` font-${weight}`;
+
+const classNames = `${classSize} ${classColor} ${classFont} ${className}`;
+---
+<p class={`${classNames}`}> <slot /> </p>

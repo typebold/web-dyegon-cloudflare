@@ -1,0 +1,581 @@
+---
+import { Image } from 'astro:assets';
+import Layout from '../../layouts/Layout.astro';
+import ImageIcon from '../../components/organisms/ImageIcon.astro';
+import Logo from '../../assets/logo_by_patagon.svg'
+import Icon1 from '../../assets/icon_1.svg'
+import Icon1White from '../../assets/icon_1-white.svg'
+import Icon2 from '../../assets/icon_2.svg'
+import Icon2White from '../../assets/icon_2-white.svg'
+import Icon3 from '../../assets/icon_3.svg'
+import Icon3White from '../../assets/icon_3-white.svg'
+import Award1 from '../../assets/award_1.png'
+import Award2 from '../../assets/award_2.png'
+import Award3 from '../../assets/award_3.png'
+import Cycle1 from '../../assets/cycle_1.jpg'
+import Cycle2 from '../../assets/cycle_2.jpg'
+import Cycle3 from '../../assets/cycle_3.jpg'
+import Leader1 from '../../assets/leader_1.png'
+import Leader2 from '../../assets/leader_2.jpg'
+import Advisor1 from '../../assets/advisors/advisor_1.png'
+import Advisor2 from '../../assets/advisors/advisor_2.png'
+import Advisor3 from '../../assets/advisors/advisor_3.png'
+import Advisor4 from '../../assets/advisors/advisor_4.png'
+import Advisor5 from '../../assets/advisors/advisor_5.png'
+import Advisor6 from '../../assets/advisors/advisor_6.png'
+import Advisor7 from '../../assets/advisors/advisor_7.png'
+import Advisor8 from '../../assets/advisors/advisor_8.png'
+import Advisor9 from '../../assets/advisors/advisor_9.png'
+import Advisor10 from '../../assets/advisors/advisor_10.png'
+import Advisor11 from '../../assets/advisors/advisor_11.png'
+import Advisor12 from '../../assets/advisors/advisor_12.png'
+import Advisor13 from '../../assets/advisors/advisor_13.png'
+import Headline from '../../components/atoms/Headline.astro';
+import Paragraph from '../../components/atoms/Paragraph.astro';
+import TitleVideo from '../../components/organisms/TitleVideo.astro';
+import Video from '../../components/molecules/Video.astro';
+import Advisor from '../../components/molecules/Advisor.astro';
+import New from '../../components/molecules/New.astro';
+import Press1 from '../../assets/press/press_1.png'
+import Press2 from '../../assets/press/press_2.png'
+import Press3 from '../../assets/press/press_3.png'
+import Press4 from '../../assets/press/press_4.png'
+import Press5 from '../../assets/press/press_5.png'
+import Press6 from '../../assets/press/press_6.png'
+import Press7 from '../../assets/press/press_7.png'
+import LogoPatagonFiber from '../../assets/by_patagon.svg'
+import ButtonArrow from '../../assets/arrow.png'
+import Footer from '../../components/organisms/Footer.astro';
+---
+
+<Layout title="DYEGON - Wild Patagonian Bacterial Textile Ink">
+	<main>
+		<section class="c-home-new">
+			<div class="c-home-new__wrapper-content">
+				<div class="c-home-new__wrapper-nav">
+					<Image
+						src={Logo}
+						class='h-14 mb-10 w-auto c-home-new__logo'
+						alt="descriptive text"
+					/>
+					<nav>
+						<ul class="c-home-new__nav">
+							<li class="text-white hidden md:block">
+								<a href="#about">
+									About Us
+								</a>
+							</li>
+							<li class="text-white hidden md:block">
+								<a href="#videos">
+									What We Do
+								</a>
+							</li>
+							<li class="text-white hidden md:block">
+								<a href="#awards">
+									Award
+								</a>
+							</li>
+							<li class="text-white hidden md:block">
+								<a href="#team">
+									Our Team
+								</a>
+							</li>
+							<li class="text-white hidden md:block">
+								<a href="#advisor">
+									Advisor Panel
+								</a>
+							</li>
+							<li class="text-white hidden md:block">
+								<a href="#press">
+									Press
+								</a>
+							</li>
+							<li class="text-white hidden md:block">
+								<a href="#contact">
+									Contact
+								</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+				<div class="c-home-new__title">
+					<div class="">
+						<Headline
+							level={1}
+							color='white'
+							weight='bold'
+							>
+							Revolutionizing Color with Nature's Touch
+						</Headline>
+						<p class="text-3xl xs:text-4xl text-white font-light mt-11">Wild Patagonian Bacterial Textile Ink</p>
+					</div>
+				</div>
+				<div class="c-home-new__video">
+					<div class="c-home-new__video--width">
+						<div class="c-home-new__video--aspect">
+							<div class="c-home-new__video--height">
+								<div class="c-home-new__video--hide-controls">
+									<iframe src="https://player.vimeo.com/video/875999656?background=1&amp;autoplay=1&amp;loop=1&amp;title=0&amp;byline=0&amp;portrait=0&amp;controls=0&amp;muted=1&amp;dnt=1" data-cookieconsent="necessary" frameborder="0" allow="autoplay" allowfullscreen="" style="display: block;"></iframe>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="c-cta">
+			<div class="c-cta__wrapper-content">
+				<Headline
+					level={2}
+					color='black'
+					weight='bold'
+					className='mb-6'>
+					Impact Investing + Exponential Return
+				</Headline>
+				<Paragraph>
+					We invite investors, brands and factories seeking startups that owns and can scale innovations with exponential global impact.
+				</Paragraph>
+				<a href="https://dyegon.com/en/form" target="_blank" class="c-cta__wrapper-button">
+					<Image
+						src={ButtonArrow}
+						class='c-cta__button mt-11'
+						alt="descriptive text"
+					/>
+				</a>
+			</div>	
+		</section>
+		<section class="c-about-us" id="about">
+			<div class="c-about-us__wrapper-content">
+				<div class="c-about-us__title">
+					<Headline
+						level={2}
+						color='black'
+						weight='bold'
+						className='mb-6'>
+						About Us
+					</Headline>
+					<Paragraph>
+						Dyegon embodies our vision in action. By harnessing natural pigments created from Wild Patagonian Bacterias, this collection is a tangible statement to our commitment to sustainable fashion. Beyond aesthetics, Dyegon stands as tangible proof that scientific innovation can drive change in the fashion industry.
+					</Paragraph>
+					<Paragraph
+						size="xl"
+						className='mt-5'>
+						We are based in Patagonia, Puerto Varas, Chile.
+					</Paragraph>
+					<Image
+						src={LogoPatagonFiber}
+						class='c-about-us__logo-patagon pt-16'
+						alt="descriptive text"
+					/>
+				</div>
+				<div class="c-about__wrapper-video">
+					<Video 
+						href='https://player.vimeo.com/video/880493179?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+						title='Video 1'
+					/>
+				</div>
+			</div>
+		</section>
+		<section class="c-videos" id="videos">
+			<div class="c-videos__wrapper-content">
+				<div class="c-videos__title">
+					<Headline
+						level={2}
+						color='black'
+						weight='bold'
+						className='pb-14'
+						>
+						What We Do
+					</Headline>
+				</div>
+				<TitleVideo 
+					title='Seek in Nature'
+					content="We turn to nature for inspiration and solutions, harnessing the potential of wild Patagonian bacteria to craft vibrant, sustainable pigments. Our approach blends nature's wisdom with innovation, paving the way for a fashion-forward future that respects our environment."
+					href_icon={Icon1}
+					title_icon='Video 1'
+					href_video='https://player.vimeo.com/video/875439726?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+				/>
+				<TitleVideo 
+					title='Bacterial Partnership'
+					content="We cultivate a unique bacterial partnership, leveraging Patagonian bacteria's natural properties to produce eco-friendly pigments that infuse fashion with vibrant, sustainable color."
+					href_icon={Icon2}
+					title_icon='Video 1'
+					href_video='https://player.vimeo.com/video/875439745?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+				/>
+				<TitleVideo 
+					title='Sustainable Textile Ink'
+					content="Dyegon introduces sustainable textile ink, a revolutionary blend of wild Patagonian bacteria and innovative science, transforming the way we color fabrics while prioritizing environmental harmony."
+					href_icon={Icon3}
+					title_icon='Video 1'
+					href_video='https://player.vimeo.com/video/875439708?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479'
+				/>
+			</div>
+		</section>
+		<section class="c-awards" id="awards">
+			<div class="pt-20 pb-20 o-container">
+				<div class="c-awards__wrapper-title">
+					<h2 class="text-3xl text-black font-bold mb-20">
+						Awards
+					</h2>
+				</div>
+				<div class="c-awards__wrapper-contet flex justify-center">
+					<div class="c-awards__awards 
+					md:flex
+					md:flex-row
+					md:justify-between
+					md:items-center
+					grid
+					justify-items-end
+					gap-10	
+					xl:w-3/5 md:w-full">
+						<Image
+							src={Award1}
+							class='h-14 w-auto mr-1'
+							alt="descriptive text"
+						/>
+						<Image
+							src={Award2}
+							class='h-14 w-auto'
+							alt="descriptive text"
+						/>
+						<Image
+							src={Award3}
+							class='h-14 w-auto'
+							alt="descriptive text"
+						/>
+					</div>
+				</div>
+			</div>
+			</div>
+		</section>
+		<section class="c-images">
+			<div class="c-images__wrapper-content ">
+				<ImageIcon
+					href_image={Cycle1}
+					title_image='hola'
+					href_icon={Icon1White}
+					title_icon='Video 1'
+				/>
+				<ImageIcon 
+					href_image={Cycle2}
+					title_image='hola'
+					href_icon={Icon2White}
+					title_icon='Video 1'
+				/>
+				<ImageIcon 
+					href_image={Cycle3}
+					title_image='hola'
+					href_icon={Icon3White}
+					title_icon='Video 1'
+				/>
+			</div>
+		</section>
+		<section class="c-team" id="team">
+			<div class="c-team__wrapper-content">
+				<div class="c-team__title">
+					<Headline
+						level={2}
+						color='black'
+						weight='bold'
+						className='mb-6'>
+						Our team
+					</Headline>
+					<Paragraph>
+						Our talented multidisciplinary team converges with a shared passion for reshaping the future of fashion. From biotechnologists harnessing the potential of Patagonian microorganisms to fashion designers crafting innovative creations, we thrive on the synergy of diverse expertise. Guided by a resolute commitment to sustainability, we unite science, artistry, and environmental consciousness to drive a new era where style and responsibility harmoniously coexist.
+					</Paragraph>
+				</div>
+				<div class="c-team__wrapper-leader">
+					<div class="c-team__leader">
+						<Image
+							class="c-team__leader-image"
+							src={Leader1}
+							alt='hola'
+						/>
+						<div class="c-team__leader-content">
+							<Headline
+								level={3}
+								color='black'
+								weight='bold'>
+								Patricia Breit - Fronzig
+							</Headline>
+							<Paragraph size='xl'>
+								CEO Co Founder & Director
+							</Paragraph>
+							<Paragraph size='xl'>
+								Industrial Designer
+							</Paragraph>
+							<div class="c-team__leader-text">
+								<div class="c-team__leader-text--line"></div>
+								<Paragraph size='lg'>	
+									Business woman and industrial designer.
+									She has received multiple national and international recognitions as an entrepreneur and innovator. Patricia has been involved in sustainable projects and disruptive technologies development. She is passionate about creating products or services from the idea, and taking them to commercial scenarios with the purpose of generating a high global impact, doing good for the planet and people.
+								</Paragraph>
+							</div>
+
+						</div>
+					</div>
+					<div class="c-team__leader">
+						<Image
+							class="c-team__leader-image"
+							src={Leader2}
+							alt='hola'
+						/>
+						<div class="c-team__leader-content">
+							<Headline
+								level={3}
+								color='black'
+								weight='bold'>
+								Felipe Rios
+							</Headline>
+							<Paragraph size='xl'>
+							 	CSO Co Founder & Director
+							</Paragraph>
+							<Paragraph size='xl'>
+								Medical Doctor & MBA
+							</Paragraph>
+							<div class="c-team__leader-text">
+								<div class="c-team__leader-text--line"></div>
+								<Paragraph
+									className='c-team__leader-text--content'
+									size='lg'
+								>
+									Medical Doctor, neuroeconomist, and innovator dedicated to the creation of high impact companies for more than 10 years.  Passionate about creating a prosperous future of abundant well-being for all, in collaboration with nature, using conscious science and biomimicry as a tool.
+								</Paragraph>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+
+		</section>
+		<section class="c-advisor" id="advisor">
+			<div class="c-advisor__wrapper-content">
+				<div class="c-advisor__title">
+					<Headline
+						level={2}
+						color='black'
+						weight='bold'
+						className='mb-6'>
+						Advisor Panel
+				</div>
+				<div class="c-advisor__wrapper-team">
+					<Advisor 
+						src_image={Advisor1}
+						alt_image='Foto Manuel Rozas'
+						name='Manuel Rozas'
+						position='Investor / Advisor'
+						academic='CSO and Founder of Kura Biotech. Endeavor'
+					/>
+					<Advisor 
+						src_image={Advisor3}
+						alt_image='Foto Nimia Manquian'
+						name='Nimia Manquian'
+						position='Chemistry'
+						academic='Commercial Engineer'
+					/>
+					<Advisor 
+						src_image={Advisor6}
+						alt_image='Foto Simon Kew'
+						name='Simon Kew'
+						position='Advisor / PhD Chemistry '
+						academic='Engineering and Biotechnology Materials Science'
+					/>
+					<Advisor 
+						src_image={Advisor13}
+						alt_image='Foto Francisco Vargas'
+						name='Francisco Vargas'
+						position='Investor / Director'
+						academic='Industrial Engineer'
+					/>
+					<Advisor 
+						src_image={Advisor11}
+						alt_image='Foto Diego Pereira'
+						name='Diego Pereira'
+						position='Investor / TI'
+						academic='Industrial Engineer'
+					/>
+					<Advisor 
+						src_image={Advisor2}
+						alt_image='Foto Rafael Enberg'
+						name='Rafael Enberg'
+						position='Investor / Health '
+						academic='Entrepreneur'
+					/>
+					<Advisor 
+						src_image={Advisor4}
+						alt_image='Foto Andrés Cox'
+						name='Andrés Cox'
+						position='Investor / Organic '
+						academic='Agronomist Entrepreneur'
+					/>
+					<Advisor 
+						src_image={Advisor7}
+						alt_image='Foto Nicolás Prieto'
+						name='Nicolás Prieto'
+						position='Investment Manager'
+						academic='Commercial Engineer'
+					/>
+					<Advisor 
+						src_image={Advisor10}
+						alt_image='Foto Maximiliano González'
+						name='Maximiliano González'
+						position='Financial Advisor'
+						academic='Comercial Engineer'
+					/>
+					<Advisor 
+						src_image={Advisor12}
+						alt_image='Foto Nicolás Casado'
+						name='Nicolás Casado'
+						position='Legal Strategy Advisor'
+						academic='Lawyer'
+					/>
+					<Advisor 
+						src_image={Advisor5}
+						alt_image='Foto Francisco Valencia'
+						name='Francisco Valencia'
+						position='R&D Business Advisor'
+						academic='Comercial Engineer'
+					/>
+					<Advisor 
+						src_image={Advisor9}
+						alt_image='Foto Cesar Kalazich'
+						name='Cesar Kalazich'
+						position='Scientist Advisor'
+						academic='Medical Doctor MSc Sport & Exercise'
+					/>
+					<Advisor 
+						src_image={Advisor8}
+						alt_image='Foto Sofia Calvo'
+						name='Sofia Calvo'
+						position='Sustainable Fashion / Advisor'
+						academic='Journalist & MBA'
+					/>
+				</div>
+
+			</div>
+
+		</section>
+		<section class="c-press" id="press">
+			<div class="c-press__wrapper-container">
+				<div class="c-press__title">
+					<Headline
+						level={2}
+						color='black'
+						weight='bold'
+						className='mb-6'
+					>
+						Press
+					</Headline>
+					<Paragraph className='mb-3'>
+						Ready to embark on a sustainable fashion journey?
+					</Paragraph>
+					<Paragraph size='lg'>
+						Reach out to us today and be a part of the movement towards eco-conscious style. Contact us to explore how you can join hands with Dyegon and make a positive impact on the world of fashion.
+					</Paragraph>
+				</div>
+				<div class="c-press__wrapper-news">
+					<New 
+						text='Patagon Fiber, the biotechnology startup that exhibits bacteria-based textile pigments in London.'
+						src_image={Press3}
+						alt_image='Hola'
+						link='https://www.linkedin.com/posts/innovacion-el-mercurio_innovaciaejn-startups-chile-activity-7081587386320592896-tGSl/'
+					/>
+					<New 
+						text='The most challenging thing is that they believe in your idea.'
+						src_image={Press1}
+						alt_image='Hola'
+						link='https://youtu.be/-zCViPa9o7I?si=MzhGd8YVn0y8_uc8'
+					/>
+					<New 
+						text='The most challenging thing is that they believe in your idea.'
+						src_image={Press7}
+						alt_image='Hola'
+						link='https://www.linkedin.com/posts/premio-avonni_daedainternacionaldelamujer-premioavonni-activity-7039669014444302336-tL7W/?utm_source=share&utm_medium=member_desktop'
+					/>
+					<New 
+						text='From Puerto Varas to England: Patagon Fiber participated in the largest Expo of sustainable materials for fashion.'
+						src_image={Press4}
+						alt_image='Hola'
+						link='https://www.diariosostenible.cl/noticia/premios-y-reconocimientos/2023/06/de-puerto-varas-a-inglaterra-patagon-fiber-participo-en-expo-mas-grande-de-materiales-sostenibles-para-la-moda'
+					/>
+					<New 
+						text='Entrepreneurs from Osorno and Puerto Varas obtain “Silver Medals” at the Environment Oscar.'
+						src_image={Press5}
+						alt_image='Hola'
+						link='https://www.diariosostenible.cl/noticia/actualidad/2022/04/emprendedores-de-osorno-y-puerto-varas-obtienen-medallas-de-plata-en-oscar-del-medio-ambiente'
+					/>
+					<New 
+						text='Textile biomaterial, seeks to be a replacement for cotton, using only stubble and agricultural waste as raw material.'
+						src_image={Press2}
+						alt_image='Hola'
+						link='https://avonni.cl/ganadores/patagon-fiber/'
+					/>
+					<New 
+						text='Patagon Fiber: “Nous créons un biomatériau à base de paille”.'
+						src_image={Press6}
+						alt_image='Hola'
+						link='https://pearlsmagazine.com/patagon-fiber-nous-creons-un-biomateriau-a-base-de-paille/'
+					/>
+				</div>
+			</div>
+		</section>
+		<div class="divider">
+		</div>
+		<Footer />
+	</main>
+</Layout>
+
+<script>
+// Obtén las referencias a los elementos de video
+var videoBgAspect = document.querySelector(".c-home-new__video--aspect");
+var videoBgWidth = document.querySelector(".c-home-new__video--width");
+var videoAspect = videoBgAspect.offsetHeight / videoBgAspect.offsetWidth;
+
+// Declarar la variable para el ID del temporizador
+var timeoutId;
+
+// Función para ajustar el tamaño del video de fondo
+function videobgEnlarge() {
+    // console.log('resize');
+    var windowAspect = window.innerHeight / window.innerWidth;
+    if (windowAspect > videoAspect) {
+        videoBgWidth.style.width = (windowAspect / videoAspect) * 100 + '%';
+    } else {
+        videoBgWidth.style.width = '100%';
+    }
+}
+
+// Agregar un evento de redimensionamiento de ventana
+window.addEventListener('resize', function() {
+    if (timeoutId) {
+        clearTimeout(timeoutId);
+    }
+    timeoutId = setTimeout(videobgEnlarge, 100);
+});
+
+// Ejecutar videobgEnlarge al cargar la página
+window.addEventListener('DOMContentLoaded', function() {
+    videobgEnlarge();
+});
+</script>
+
+<style lang="scss" is:global>
+@use "../../scss/main.scss" as *;
+.c-videos{
+	background: linear-gradient(180deg, rgba(152, 255, 173, 0.00) 0%, rgba(152, 255, 175, 0.80) 52.08%, rgba(118, 251, 147, 0.00) 100%);
+	&__wrapper-content{
+        width: 65%;
+        max-width: 1600px;
+        display: block;
+        margin: 0 auto;
+        @include xl(){
+            width: 75%;
+        }
+        @include lg(){
+            width: 100%;
+        }   
+    }
+
+}
+</style>

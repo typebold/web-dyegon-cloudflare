@@ -1,0 +1,16 @@
+@use "../tools/mixin" as *;
+
+.c-images {
+	&__wrapper-content{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        height: auto;
+		min-height: 500px;
+		@include lg(){
+			grid-template-columns: 1fr;
+			grid-template-rows: repeat(3, 1fr);
+			height: auto;
+		}
+    }
+}

@@ -1,0 +1,49 @@
+---
+import { Image } from 'astro:assets';
+import Video from '../molecules/Video.astro';
+import Headline from '../atoms/Headline.astro';
+import Paragraph from '../atoms/Paragraph.astro';
+
+interface Props {
+	title: string;
+	content: string;
+	href_video?: string;
+	title_video?: string;
+	href_icon: ImageMetadata;
+	title_icon: string;
+}
+
+const { href_icon, title_icon, title_video, href_video, title, content } = Astro.props;
+---
+
+<div class="c-title-video">
+	<div class="c-title-video__wrapper-content">
+		<div class="c-title-video__wrapper-text flex flex-col items-center">
+			<Image
+				class="w-12 h-auto mb-4"
+				src={href_icon}
+				alt='hola'
+			/>
+			<Headline 
+				level={3}
+				weight='bold'
+				color='black'
+				className='pb-4'
+			>
+				{title}	
+			</Headline>
+			<Paragraph
+				size='lg'
+				className='lg:w-3/5 w-full pb-12'
+			>
+				{content}
+			</Paragraph>
+		</div>
+		<div class="c-title-video__wrapper-video">
+			<Video 
+				href={href_video}
+				title='video 1'
+			/>
+		</div>
+	</div>
+</div>

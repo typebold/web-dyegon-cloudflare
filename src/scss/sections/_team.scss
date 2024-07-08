@@ -1,0 +1,81 @@
+@use "../tools/mixin" as *;
+
+.c-team{
+    padding-top: 120px;
+    &__wrapper-content{
+        width: 70%;
+        max-width: 1600px;
+        display: block;
+        margin: 0 auto;
+        @media (max-width: 768px) {
+            width: 95%;
+        }
+    }
+    &__title{
+        width: 70%;
+        margin: 0 auto;
+        @include lg(){
+            width: 100%;
+        }
+    }
+	&__leader{
+		padding-top: 100px;
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+		gap: 20px;
+        @include xl(){
+            grid-template-columns: 1fr;
+            padding-top: 100px;
+        }
+        @include xs(){
+            padding-top: 50px;
+        }
+	}
+	&__leader-image{
+        border-radius: 10px;
+        height: auto;
+        max-height: 500px;
+        object-fit: cover;
+		justify-self: flex-end;
+		width: 80%;
+        @include xl(){
+            height: 100%;
+            width: 50%;
+            justify-self: center;
+        }
+        @include sm(){
+            width: 95%;
+        }
+
+	}
+	&__leader-content{
+		justify-self: flex-start;
+		text-align: start;
+		align-self: end;
+        width: 60%;
+        @include xl(){
+            width: 100%;
+            text-align: center;
+            justify-self: center;
+            align-self: flex-start;
+        }
+	}
+	&__leader-text{
+		margin-top: 40px;
+		display: grid;
+		grid-template-columns: 2px 1fr;
+		grid-template-rows: 1fr;
+		flex-direction: column;
+		gap: 20px;
+        @include lg(){
+            margin-top: 20px;
+        }
+		
+		&--line{
+			background: black;
+			height: 100%;
+			width: 100%;
+		}
+	}
+}

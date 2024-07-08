@@ -1,0 +1,33 @@
+---
+import { Image } from 'astro:assets';
+interface Props {
+	href_image: ImageMetadata;
+	title_image: string;
+	href_icon: ImageMetadata;
+	title_icon: string;
+}
+
+const { href_image, title_image, href_icon } = Astro.props;
+---
+
+<div class="c-image-icon">
+    <Image
+        class="w-12 h-auto c-image-icon__svg"
+        src={href_icon}
+        alt='hola'
+    />
+    <Image class='h-full w-full object-cover' src={href_image} alt={title_image}/>
+</div>
+<style lang="scss">
+    .c-image-icon{
+        position: relative;
+        &__svg{
+            position: absolute;
+            z-index: 1;
+            top: 45%;
+            left: 45%;
+            fill: white;
+        }
+    }
+
+</style>
