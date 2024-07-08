@@ -9,7 +9,4 @@ export default defineConfig({
     imageService: 'cloudflare'
  }),
   integrations: [tailwind()],
-  redirects: {
-    '/': 'en'
-  }
 });
